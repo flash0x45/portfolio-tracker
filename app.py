@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from streamlit_autorefresh import st_autorefresh
 
 from agents.market_clock import get_market_status
 from agents.portfolio_builder import build_portfolio
@@ -9,12 +10,6 @@ from config import FUND_SLUG, POLL_INTERVAL_S
 
 st.set_page_config(page_title="Portfolio Tracker", layout="wide")
 st.title("Real-Time Portfolio Tracker")
-
-try:
-    from streamlit_autorefresh import st_autorefresh
-except ImportError:
-    st.error("Missing dependency: streamlit-autorefresh. Run: pip install -r requirements.txt")
-    st.stop()
 
 st.sidebar.header("Settings")
 slug = st.sidebar.text_input("Fund slug", FUND_SLUG)
