@@ -1,0 +1,18 @@
+FUND_SLUG = "motilal-oswal-most-focused-midcap-30-fund-direct-growth"
+POLL_INTERVAL_S = 60
+TIMEZONE = "Asia/Kolkata"
+MARKET_OPEN = "09:15"
+MARKET_CLOSE = "15:30"
+YFINANCE_INTRADAY_INTERVAL = "1m"
+YFINANCE_DAILY_INTERVAL = "1d"
+MAX_FETCH_RETRIES = 3
+RETRY_BACKOFF_S = 5
+
+NSE_HOLIDAYS = [
+    "2025-01-26",
+    "2025-08-15",
+    "2025-10-02",
+    "2026-01-26",
+    "2026-08-15",
+    "2026-10-02",
+]
