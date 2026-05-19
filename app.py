@@ -9,7 +9,7 @@ from agents.return_calculator import calculate_returns
 from config import FUND_SLUG, POLL_INTERVAL_S
 
 st.set_page_config(page_title="Portfolio Tracker", layout="wide")
-st.title("Real-Time Portfolio Tracker")
+st.title("Fund Portfolio Tracker")
 
 st.sidebar.header("Settings")
 slug = st.sidebar.text_input("Fund slug", FUND_SLUG)
